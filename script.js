@@ -31,13 +31,13 @@ function createTask() {
     button.addEventListener("click", () => {
       if (!isLineThrough) {
         isLineThrough = true;
-        button.parentElement.parentElement.firstElementChild.classList.add(
+        button.parentElement.parentElement.classList.add(
           "line-through"
         );
         button.classList.add("task-checked");
       } else {
         isLineThrough = false;
-        button.parentElement.parentElement.firstElementChild.classList.remove(
+        button.parentElement.parentElement.classList.remove(
           "line-through"
         );
         button.classList.remove("task-checked");
