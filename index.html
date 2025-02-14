@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task List</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
+  <div class="task-list-container">
+    <div class="task-input-container">
+      <input type="text" class="task-input jsTaskInput" placeholder="Enter Task...">
+      <button class="add-task-btn jsAddTaskBtn">+</button>
+    </div>
+    <div class="task-list-item">
+      <p class="task-text">Walk Bobby</p>
+      <div>
+        <button class="task-check"><i class="fa-solid fa-check"></i></button>
+        <button class="task-delete"><i class="fa-solid fa-trash"></i></button>
+      </div>
+    </div>
+  </div>
+
   <script src="./script.js"></script>
 </body>
+
 </html>

@@ -51,3 +51,93 @@ select {
   font-size: inherit;
 }
 /* CSS Reset */
+
+body {
+  background: url(./images/coffee-1276784_1920.jpg) no-repeat center center /
+    cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Abel", serif;
+  font-size: 1.25rem;
+}
+
+.task-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.task-input-container {
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+
+.task-input {
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.task-list-item {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.add-task-btn {
+  width: 5rem;
+  background-color: #fff;
+  color: #80ef80;
+  border: 2px solid #80ef80;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  padding: 0.25rem;
+  transition: 0.2s;
+  flex-shrink: 0;
+}
+
+.add-task-btn:hover {
+  color: #fff;
+  background-color: #80ef80;
+}
+
+.task-check {
+  width: 5rem;
+  background-color: #fff;
+  color: #ffc067;
+  border: 2px solid #ffc067;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  padding: 0.25rem;
+  transition: 0.2s;
+}
+
+.task-check:hover {
+  color: #fff;
+  background-color: #ffc067;
+}
+
+.task-delete {
+  width: 5rem;
+  background-color: #fff;
+  color: #ff746c;
+  border: 2px solid #ff746c;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  padding: 0.25rem;
+  transition: 0.2s;
+}
+
+.task-delete:hover {
+  color: #fff;
+  background-color: #ff746c;
+}
