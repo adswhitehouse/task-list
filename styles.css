@@ -64,8 +64,6 @@ body {
 }
 
 .task-list-container {
-  display: flex;
-  flex-direction: column;
   width: 40rem;
 }
 
@@ -91,6 +89,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 0.5rem;
+  gap: 1rem;
 }
 
 .add-task-btn {
@@ -140,4 +139,10 @@ body {
 .task-delete:hover {
   color: #fff;
   background-color: #ff746c;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
 }
