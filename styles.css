@@ -150,3 +150,8 @@ body {
 .line-through {
   text-decoration: line-through;
 }
+
+.task-checked {
+  background-color: #ffc067;
+  color: #fff;
+}
