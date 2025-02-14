@@ -1,14 +1,12 @@
 const input = document.querySelector(".jsTaskInput");
 const addBtn = document.querySelector(".jsAddTaskBtn");
 const checkBtn = document.querySelector(".jsTaskCheck");
-const deleteBtn = document.querySelector(".jsTaskDelete");
+
 const taskListContainer = document.querySelector(".jsTaskListContainer");
 const taskItem = document.querySelector(".jsTaskListItem");
 
-
-let taskText = ``
 function createTask() {
-  taskText = input.value
+  let taskText = input.value
   let newTaskItem = document.createElement("div");
   newTaskItem.classList.add("task-list-item");
   newTaskItem.innerHTML = `
@@ -18,8 +16,22 @@ function createTask() {
       <button class="task-delete jsTaskDelete"><i class="fa-solid fa-trash"></i></button>
     </div>`;
     taskListContainer.appendChild(newTaskItem)
+    input.value = ``
+
+    let deleteBtn = document.querySelectorAll(".jsTaskDelete");
+    deleteBtn.forEach((button) => {
+      button.addEventListener("click", () => {
+        button.parentElement.parentElement.remove()
+      })
+    })
 }
 
 addBtn.addEventListener("click", () => {
   createTask()
+})
+
+input.addEventListener("keydown", (e) => {
+  if(e.key === "Enter") {
+    createTask()
+  }
 })

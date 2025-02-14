@@ -146,3 +146,7 @@ body {
   flex-direction: row;
   gap: 0.25rem;
 }
+
+.line-through {
+  text-decoration: line-through;
+}
